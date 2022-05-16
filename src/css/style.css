@@ -49,9 +49,6 @@ img {
   --text-xxl: 32px;
   --text-xxxl: 40px;
 
-  /* Breakpoints */
-  --screen-md: 768px;
-
   /* base styles */
   --base-font-family: "Lato", "Helvetica Neue", helvetica, sans-serif;
   --secondary-font-family: "COCOGOOSE", sans-serif;
