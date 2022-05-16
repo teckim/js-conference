@@ -1,0 +1,28 @@
+.program {
+  padding: 40px 0;
+  text-align: left;
+}
+
+.program .program__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 12px;
+  margin: 4px 0;
+  padding: 16px;
+  background-color: #3d3f46;
+}
+
+.program .program__card .program__card-icon img {
+  min-width: 36px;
+}
+
+.program .program__card .program__card-title {
+  min-width: 75px;
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+}
+
+.program .program__card .program__card-text {
+  font-size: var(--text-xs);
+}
