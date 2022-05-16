@@ -43,3 +43,18 @@
   color: var(--color-white);
   background-color: var(--color-primary);
 }
+
+.section .section__more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 16px;
+  font-family: var(--base-font-family);
+  text-transform: uppercase;
+  border: 2px solid var(--color-gray);
+}
+
+.section .section__more-btn > *:not(:last-child) {
+  margin-right: 8px;
+}
