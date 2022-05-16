@@ -1,0 +1,125 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--navbar-height);
+  padding: 0 24px;
+  background-color: var(--color-neutrals);
+
+  --navbar-height: 48px;
+}
+
+.navbar .navbar__logo-wrapper {
+  display: none;
+}
+
+.navbar .navbar__menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.navbar .navbar__links-list-container,
+.navbar .navbar__links-list-container::after {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .navbar__links-list-container {
+  display: none;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+.navbar .navbar__links-list-container::after {
+  content: "";
+  z-index: -1;
+  padding: 0 24px;
+  background-color: rgba(96, 112, 255, 80%);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+}
+
+.navbar .navbar__close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  height: var(--navbar-height);
+  width: 40px;
+  margin-bottom: 18px;
+}
+
+.navbar .navbar__links-list-item {
+  margin-bottom: 40px;
+}
+
+.navbar .navbar__links-list-item a {
+  font-weight: var(--font-thick);
+  font-size: var(--text-xxl);
+  line-height: 44px;
+  color: var(--color-neutrals);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 72px;
+  }
+
+  .navbar .navbar__logo-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+  }
+  
+  .navbar .navbar__logo {
+    color: var(--color-primary-B400);
+    font-weight: var(--font-bold);
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .navbar .navbar__menu-button {
+    display: none;
+  }
+
+  .navbar .navbar__close-button {
+    display: none;
+  }
+
+  .navbar .navbar__links-list-container {
+    display: block;
+    position: static;
+  }
+
+  .navbar .navbar__links-list-container::after {
+    display: none;
+  }
+
+  .navbar .navbar__links-list {
+    display: flex;
+  }
+
+  .navbar .navbar__links-list-item {
+    height: 100%;
+    padding: 16px;
+    margin: 0;
+  }
+
+  .navbar .navbar__links-list-item a {
+    font-weight: var(--font-regular);
+    font-size: var(--text-sm);
+    line-height: 20px;
+    color: var(--color-neutrals-N600);
+  }
+}

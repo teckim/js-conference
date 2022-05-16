@@ -10,6 +10,14 @@
     <!-- Global styles -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Components -->
+    <link rel="stylesheet" href="./css/components/toolbar.css" />
+    <link rel="stylesheet" href="./css/components/navbar.css" />
+    <link rel="stylesheet" href="./css/components/event.css" />
+    <!-- Utilities -->
+    <link rel="stylesheet" href="./css/utilities/layout.css" />
+    <!-- Pages -->
+    <link rel="stylesheet" href="./css/pages/home.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +26,64 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="toolbar container">
+        <ul class="toolbar__list">
+          <li class="toolbar__list">FB</li>
+          <li class="toolbar__list">Twitter</li>
+          <li class="toolbar__list">English</li>
+          <li class="toolbar__list">My Page</li>
+          <li class="toolbar__list">Logout</li>
+        </ul>
+      </div>
+      <div class="navbar container">
+        <div class="navbar__logo-wrapper">
+          <a href="/" class="navbar__logo">Logo here</a>
+        </div>
+        <nav>
+          <button class="navbar__menu-button" type="button">
+            <img src="./assets/icons/menu.svg" alt="Menu icon" />
+          </button>
+          <div class="navbar__links-list-container">
+            <button class="navbar__close-button" type="button">
+              <img src="./assets/icons/close.svg" alt="Close icon" />
+            </button>
+            <ul class="navbar__links-list">
+              <li class="navbar__links-list-item">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li class="navbar__links-list-item">
+                <a href="#about">About</a>
+              </li>
+              <li class="navbar__links-list-item">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="headline">
+      <div class="event">
+        <div class="container">
+          <div class="event__overtitle">"Hello! JavaScript Lovers"</div>
+          <h1 class="event__title">
+            Global JavaScript Conference <br />
+            2022
+          </h1>
+          <p class="event__description">
+            JavaScript is #1 on demand programming language. Meet the ones who
+            shape out the now and the future of the prospering nation.
+          </p>
+          <div class="event__date">JUNE, 16th ~ 20th</div>
+          <div class="event__location">
+            @ Gedempt Hamerkanaal 231 1021 KP Amsterdam
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
