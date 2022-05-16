@@ -1,0 +1,35 @@
+.headline {
+  background: url(../../assets/images/headline-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -250px;
+  background-position-x: center;
+}
+
+.section {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.section.section--dark {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.section .section__title {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+  font-weight: var(--font-regular);
+}
+
+.section .section__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 40%;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--color-primary);
+}
