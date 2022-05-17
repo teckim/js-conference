@@ -2,11 +2,13 @@
   display: flex;
   text-align: left;
   align-items: flex-start;
+  margin: 36px 0;
 }
 
 .speaker .speaker__image {
-  width: 100px;
+  width: 120px;
   margin-right: 16px;
+  border-radius: 8px;
 }
 
 .speaker .speaker__name {
@@ -32,4 +34,10 @@
 .speaker .speaker__about {
   font-size: var(--text-xxs);
   margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .speaker {
+    margin: 16px 0;
+  }
 }

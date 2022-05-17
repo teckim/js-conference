@@ -56,4 +56,7 @@ img {
   --base-font-size: var(--text-base);
   --base-text-color: var(--color-black);
   --base-background-color: var(--color-white);
+
+  /* common vars */
+  --toolbar-height: 28px;
 }
