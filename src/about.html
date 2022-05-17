@@ -13,14 +13,13 @@
     <!-- Components -->
     <link rel="stylesheet" href="./css/components/toolbar.css" />
     <link rel="stylesheet" href="./css/components/navbar.css" />
-    <link rel="stylesheet" href="./css/components/event.css" />
-    <link rel="stylesheet" href="./css/components/program.css" />
-    <link rel="stylesheet" href="./css/components/speaker.css" />
+    <link rel="stylesheet" href="./css/components/event-card.css" />
     <link rel="stylesheet" href="./css/components/partner.css" />
+
     <!-- Utilities -->
     <link rel="stylesheet" href="./css/utilities/layout.css" />
     <!-- Pages -->
-    <link rel="stylesheet" href="./css/pages/home.css" />
+    <link rel="stylesheet" href="./css/pages/about.css" />
     <link rel="stylesheet" href="./css/pages/common.css" />
 
     <!-- Fonts -->
@@ -71,97 +70,48 @@
       </div>
     </header>
     <section class="headline">
-      <div class="event">
-        <div class="container">
-          <div class="event__overtitle">"Hello! JavaScript Lovers"</div>
-          <h1 class="event__title">
-            Global JavaScript Conference <br />
-            2022
-          </h1>
-          <p class="event__description">
-            JavaScript is #1 on demand programming language. Meet the ones who
-            shape out the now and the future of the prospering nation.
-          </p>
-          <div class="event__date">JUNE, 16th ~ 20th</div>
-          <div class="event__location">
-            @ Gedempt Hamerkanaal 231 1021 KP Amsterdam
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section--dark">
       <div class="container">
-        <h2 class="section__title">Main Program</h2>
-        <div class="program">
-          <div class="program__card">
-            <div class="program__card-icon">
-              <img src="./assets/icons/login.svg" alt="Login icon" />
-            </div>
-            <div class="program__card-title">Opening</div>
-            <div class="program__card-text">
-              A small opening ceremony, to welcome everybody, and give a briefe
-              introduction to the conference.
-            </div>
-          </div>
-          <div class="program__card">
-            <div class="program__card-icon">
-              <img src="./assets/icons/speaker.svg" alt="Speaker icon" />
-            </div>
-            <div class="program__card-title">Lecture</div>
-            <div class="program__card-text">
-              Listen to the speakers and inreach your knowledge.
-            </div>
-          </div>
-          <div class="program__card">
-            <div class="program__card-icon">
-              <img src="./assets/icons/info.svg" alt="Info icon" />
-            </div>
-            <div class="program__card-title">Q&A</div>
-            <div class="program__card-text">
-              If you have a question, you will have the opportunity to ask the
-              speaker.
-            </div>
-          </div>
-          <div class="program__card">
-            <div class="program__card-icon">
-              <img src="./assets/icons/logout.svg" alt="Info icon" />
-            </div>
-            <div class="program__card-title">Conclusion</div>
-            <div class="program__card-text">
-              We will conclude our conference here.
-            </div>
-          </div>
+        <div class="headline__overtitle">"Hello! JavaScript Lovers"</div>
+        <h1 class="headline__title">
+          Global JavaScript Conference <br />
+          2022
+        </h1>
+        <p class="headline__description">
+          JavaScript is #1 on demand programming language. Meet the ones who
+          shape out the now and the future of the prospering nation.
+        </p>
+        <div class="headline__contact">
+          Please contact us per Email for any further questions about CC Global
+          Summit 2015! <br />
+          <a
+            class="headline__contact-link"
+            href="mailto:ccsummit2015@cckorea.org"
+            >ccsummit2015@cckorea.org</a
+          >
         </div>
-        <a class="section__link" href="/program">Join JavaScript Conference</a>
       </div>
     </section>
     <section class="section">
       <div class="container">
-        <h2 class="section__title">Featured Speakers</h2>
+        <h2 class="section__title">Past Conferences</h2>
+        <div class="section__subtitle">
+          Take a look at the last two JavaScript Global Conferences which took
+          place in Buenos Aires and in Warsaw.
+        </div>
         <div class="section__body">
-          <div class="speaker">
-            <img
-              class="speaker__image"
-              src="./assets/images/speaker-1.jpg"
-              alt="Speaker 1"
-            />
-            <div class="speaker__body">
-              <div class="speaker__name">Yochai Benkler</div>
-              <p class="speaker__occupation">
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </p>
-              <p class="speaker__about">
-                Benkler studies commons-based peer production, and published his
-                senminal book The Wealth of Networks in 2006
-              </p>
-            </div>
+          <div class="event-card">
+            <div class="event-card__year">2013</div>
+            <h2 class="event-card__title">
+              JS Global Conference, 2013 in Buenos Aires
+            </h2>
+          </div>
+          <div class="event-card">
+            <div class="event-card__year">2011</div>
+            <h2 class="event-card__title">
+              JS Global Conference, 2011 in Warsaw
+            </h2>
           </div>
         </div>
-        <button class="section__more-btn">
-          <span>More</span>
-          <img src="./assets/icons/chevron-down.svg" alt="Chevron down icon" />
-        </button>
       </div>
     </section>
     <section class="section section--dark">
