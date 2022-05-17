@@ -42,3 +42,8 @@ open `src/index.html`.
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+## Credits
+
+[Cindy Shin (CC Global Summit 2015)](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+[JS Nation (insperation)](https://jsnation.com/)
