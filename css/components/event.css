@@ -42,3 +42,13 @@
 .event .event__location {
   font-size: var(--text-md);
 }
+
+@media screen and (min-width: 768px) {
+  .event {
+    background: linear-gradient(
+      0deg,
+      #f5f5f5 40%,
+      rgba(238, 238, 238, 0.8) 100%
+    );
+  }
+}

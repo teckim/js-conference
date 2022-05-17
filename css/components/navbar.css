@@ -8,7 +8,6 @@
   align-items: center;
   height: var(--navbar-height);
   padding: 0 24px;
-  background-color: var(--color-neutrals);
 
   --navbar-height: 48px;
 }
@@ -25,28 +24,23 @@
   width: 40px;
 }
 
-.navbar .navbar__links-list-container,
-.navbar .navbar__links-list-container::after {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.navbar .navbar__cta-button {
+  display: none;
 }
 
 .navbar .navbar__links-list-container {
-  display: none;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  min-width: 100%;
+  opacity: 0;
+  z-index: 1;
   flex-direction: column;
   padding: 0 24px;
-}
-
-.navbar .navbar__links-list-container::after {
-  content: "";
-  z-index: -1;
-  padding: 0 24px;
-  background-color: rgba(96, 112, 255, 80%);
-  backdrop-filter: blur(6.2px);
-  -webkit-backdrop-filter: blur(6.2px);
+  background-color: var(--color-white);
+  transition: all ease-in-out 0.4s;
 }
 
 .navbar .navbar__close-button {
@@ -64,15 +58,15 @@
 }
 
 .navbar .navbar__links-list-item a {
-  font-weight: var(--font-thick);
+  font-weight: var(--font-medium);
   font-size: var(--text-xxl);
   line-height: 44px;
-  color: var(--color-neutrals);
 }
 
 @media screen and (min-width: 768px) {
   .navbar {
     height: 72px;
+    margin-top: var(--toolbar-height) !important;
   }
 
   .navbar .navbar__logo-wrapper {
@@ -80,10 +74,10 @@
     align-items: center;
     width: 100px;
     height: 40px;
+    margin-right: auto;
   }
-  
+
   .navbar .navbar__logo {
-    color: var(--color-primary-B400);
     font-weight: var(--font-bold);
     font-size: 18px;
     line-height: 20px;
@@ -93,6 +87,13 @@
     display: none;
   }
 
+  .navbar .navbar__cta-button {
+    display: block;
+    padding: 8px 16px;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+
   .navbar .navbar__close-button {
     display: none;
   }
@@ -100,10 +101,8 @@
   .navbar .navbar__links-list-container {
     display: block;
     position: static;
-  }
-
-  .navbar .navbar__links-list-container::after {
-    display: none;
+    opacity: 1;
+    background-color: transparent;
   }
 
   .navbar .navbar__links-list {
@@ -117,9 +116,8 @@
   }
 
   .navbar .navbar__links-list-item a {
-    font-weight: var(--font-regular);
     font-size: var(--text-sm);
     line-height: 20px;
-    color: var(--color-neutrals-N600);
+    color: var(--color-black);
   }
 }
