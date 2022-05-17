@@ -3,6 +3,10 @@
   padding-right: 18px;
 }
 
+.flex {
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 1156px;
