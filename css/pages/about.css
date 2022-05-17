@@ -1,0 +1,48 @@
+.headline {
+  background-color: var(--color-gray);
+  text-align: center;
+}
+
+.headline {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  background: linear-gradient(0deg, #f5f5f5 50%, rgba(238, 238, 238, 0.8) 100%);
+}
+
+.headline .headline__overtitle {
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.headline .headline__title {
+  font-family: var(--secondary-font-family);
+  font-size: var(--text-xxl);
+  line-height: 36px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 18px;
+}
+
+.headline .headline__description {
+  line-height: 24px;
+  margin: 0 -4px;
+  padding: 24px;
+  border: 1px solid var(--color-gray);
+  background-color: var(--color-white);
+  margin-bottom: 18px;
+}
+
+.headline .headline__contact {
+  line-height: 24px;
+  font-size: var(--text-xs);
+}
+
+.headline .headline__contact-link {
+  font-weight: var(--font-thick);
+  text-decoration: underline;
+}
