@@ -58,3 +58,11 @@
 .section .section__more-btn > *:not(:last-child) {
   margin-right: 8px;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  padding: 24px;
+}
