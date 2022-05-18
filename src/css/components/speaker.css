@@ -1,14 +1,28 @@
 .speaker {
+  position: relative;
   display: flex;
+  padding-top: 18px;
   text-align: left;
   align-items: flex-start;
   margin: 36px 0;
 }
 
+.speaker::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 80px;
+  width: 80px;
+  background: url(../../assets/images/chess.jpg);
+  background-size: cover;
+}
+
 .speaker .speaker__image {
   width: 120px;
   margin-right: 16px;
-  border-radius: 8px;
+  margin-left: 20px;
 }
 
 .speaker .speaker__name {
@@ -39,5 +53,9 @@
 @media screen and (min-width: 768px) {
   .speaker {
     margin: 16px 0;
+  }
+
+  .speaker::before {
+    opacity: 40%;
   }
 }
