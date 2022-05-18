@@ -68,14 +68,30 @@ function gentateSpeakerCard({
   `;
 }
 
-const init = () => {
+function showSpeakers(speakers) {
   const speakersContainerEl = document.querySelector('#speakers');
 
   if (!speakersContainerEl) return;
 
   speakersContainerEl.innerHTML = '';
+
   speakers.forEach((speaker) => {
     speakersContainerEl.innerHTML += gentateSpeakerCard(speaker);
+  });
+}
+
+const init = () => {
+  const moreBtnEl = document.querySelector('.section__more-btn');
+  const isMobile = window.innerWidth < 768;
+  const displayedSpeakers = isMobile ? speakers.slice(0, 2) : speakers;
+
+  showSpeakers(displayedSpeakers);
+
+  if (!moreBtnEl) return;
+
+  moreBtnEl.addEventListener('click', () => {
+    showSpeakers(speakers);
+    moreBtnEl.style.display = 'none';
   });
 };
 

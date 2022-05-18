@@ -2,7 +2,8 @@
 
 # JavaScript Conference Capstone Project
 
-> This is the first capstone project for microverse.
+> This is the first capstone project for microverse, the topic is JavaScript Global Conference orgnized by JS Nation.
+> This project is inpired from the [JS Nation website](https://jsnation.com/).
 
 ## Built With
 

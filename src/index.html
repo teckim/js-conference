@@ -33,7 +33,7 @@
     <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
 
     <!-- Scripts -->
-    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -50,33 +50,35 @@
           <li class="toolbar__list-item"><a>Logout</a></li>
         </ul>
       </div>
-      <div class="navbar container">
-        <div class="navbar__logo-wrapper">
-          <a href="./index.html" class="navbar__logo">
-            <img src="./assets/images/logo.png" alt="Logo">
-          </a>
-        </div>
-        <nav>
-          <button class="navbar__menu-button" type="button">
-            <img src="./assets/icons/menu.svg" alt="Menu icon" />
-          </button>
-          <div class="navbar__links-list-container">
-            <button class="navbar__close-button" type="button">
-              <img src="./assets/icons/chevron-left.svg" alt="Close icon" />
-            </button>
-            <ul class="navbar__links-list">
-              <li class="navbar__links-list-item">
-                <a href="./about.html">About</a>
-              </li>
-              <li class="navbar__links-list-item">
-                <a href="./about.html">Contact</a>
-              </li>
-            </ul>
+      <div class="navbar">
+        <div class="navbar__container container">
+          <div class="navbar__logo-wrapper">
+            <a href="./index.html" class="navbar__logo">
+              <img src="./assets/images/logo.png" alt="Logo" />
+            </a>
           </div>
-        </nav>
-        <button class="navbar__cta-button" type="button">
-          Get Your Ticket
-        </button>
+          <nav>
+            <button class="navbar__menu-button" type="button">
+              <img src="./assets/icons/menu.svg" alt="Menu icon" />
+            </button>
+            <div class="navbar__links-list-container">
+              <button class="navbar__close-button" type="button">
+                <img src="./assets/icons/chevron-left.svg" alt="Close icon" />
+              </button>
+              <ul class="navbar__links-list">
+                <li class="navbar__links-list-item">
+                  <a href="./about.html">About</a>
+                </li>
+                <li class="navbar__links-list-item">
+                  <a href="./about.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <button class="navbar__cta-button" type="button">
+            Get Your Ticket
+          </button>
+        </div>
       </div>
     </header>
     <section class="headline">
@@ -141,67 +143,20 @@
             </div>
           </div>
         </div>
-        <a class="section__link" href="/program">Join JavaScript Conference</a>
+        <a
+          class="section__link section__link--plain desktop-only"
+          href="/program"
+          >SEE THE WHOLE PROGRAM</a
+        >
+        <a class="section__link mobile-only" href="/program"
+          >Join JavaScript Conference</a
+        >
       </div>
     </section>
     <section class="section">
       <div class="container">
         <h2 class="section__title">Featured Speakers</h2>
         <div id="speakers" class="section__body section__body--desktop-grid">
-          <div class="speaker">
-            <img
-              class="speaker__image"
-              src="./assets/images/speaker-1.jpg"
-              alt="Speaker 1"
-            />
-            <div class="speaker__body">
-              <div class="speaker__name">Yochai Benkler</div>
-              <p class="speaker__occupation">
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </p>
-              <p class="speaker__about">
-                Benkler studies commons-based peer production, and published his
-                senminal book The Wealth of Networks in 2006
-              </p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img
-              class="speaker__image"
-              src="./assets/images/speaker-1.jpg"
-              alt="Speaker 1"
-            />
-            <div class="speaker__body">
-              <div class="speaker__name">Yochai Benkler</div>
-              <p class="speaker__occupation">
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </p>
-              <p class="speaker__about">
-                Benkler studies commons-based peer production, and published his
-                senminal book The Wealth of Networks in 2006
-              </p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img
-              class="speaker__image"
-              src="./assets/images/speaker-1.jpg"
-              alt="Speaker 1"
-            />
-            <div class="speaker__body">
-              <div class="speaker__name">Yochai Benkler</div>
-              <p class="speaker__occupation">
-                Berkman Professor of Entrepreneurial Legal Studies at Harvard
-                Law School
-              </p>
-              <p class="speaker__about">
-                Benkler studies commons-based peer production, and published his
-                senminal book The Wealth of Networks in 2006
-              </p>
-            </div>
-          </div>
           <div class="speaker">
             <img
               class="speaker__image"
@@ -227,7 +182,7 @@
         </button>
       </div>
     </section>
-    <section class="section section--dark">
+    <section class="section section--dark desktop-only">
       <div class="container">
         <h2 class="section__title">Partners</h2>
         <div class="section__body">
@@ -259,15 +214,18 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      Event by
-      <img
-        height="40"
-        width="40"
-        src="./assets/images/git-nation.svg"
-        alt="Git Nation"
-      />
-      <strong>GitNation</strong>
+    <footer class="footer footer--light desktop-only">
+      <div class="footer__logo">
+        Event by
+        <img
+          height="40"
+          width="40"
+          src="./assets/images/git-nation.svg"
+          alt="Git Nation"
+        />
+        <strong>GitNation</strong>
+      </div>
+      <p class="footer__rights">2022 JS Nation, Some rights are reserved.</p>
     </footer>
   </body>
 </html>

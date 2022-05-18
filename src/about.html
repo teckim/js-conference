@@ -49,38 +49,40 @@
           <li class="toolbar__list-item"><a>Logout</a></li>
         </ul>
       </div>
-      <div class="navbar container">
-        <div class="navbar__logo-wrapper">
-          <a href="./index.html" class="navbar__logo">
-            <img src="./assets/images/logo.png" alt="Logo">
-          </a>
-        </div>
-        <nav>
-          <button class="navbar__menu-button" type="button">
-            <img src="./assets/icons/menu.svg" alt="Menu icon" />
-          </button>
-          <div class="navbar__links-list-container">
-            <button class="navbar__close-button" type="button">
-              <img src="./assets/icons/chevron-left.svg" alt="Close icon" />
-            </button>
-            <ul class="navbar__links-list">
-              <li class="navbar__links-list-item">
-                <a href="./about.html">About</a>
-              </li>
-              <li class="navbar__links-list-item">
-                <a href="./about.html">Contact</a>
-              </li>
-            </ul>
+      <div class="navbar">
+        <div class="navbar__container container">
+          <div class="navbar__logo-wrapper">
+            <a href="./index.html" class="navbar__logo">
+              <img src="./assets/images/logo.png" alt="Logo" />
+            </a>
           </div>
-        </nav>
-        <button class="navbar__cta-button" type="button">
-          Get Your Ticket
-        </button>
+          <nav>
+            <button class="navbar__menu-button" type="button">
+              <img src="./assets/icons/menu.svg" alt="Menu icon" />
+            </button>
+            <div class="navbar__links-list-container">
+              <button class="navbar__close-button" type="button">
+                <img src="./assets/icons/chevron-left.svg" alt="Close icon" />
+              </button>
+              <ul class="navbar__links-list">
+                <li class="navbar__links-list-item">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="navbar__links-list-item">
+                  <a href="./about.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <button class="navbar__cta-button" type="button">
+            Get Your Ticket
+          </button>
+        </div>
       </div>
     </header>
     <section class="headline">
       <div class="container">
-        <div class="headline__overtitle">"Hello! JavaScript Lovers"</div>
+        <div class="headline__overtitle mobile-only">"Hello! JavaScript Lovers"</div>
         <h1 class="headline__title">
           Global JavaScript Conference <br />
           2022
@@ -97,6 +99,21 @@
             href="mailto:ccsummit2015@cckorea.org"
             >ccsummit2015@cckorea.org</a
           >
+        </div>
+      </div>
+    </section>
+    <section class="section section--bordered">
+      <div class="container">
+        <h2 class="section__title">JavaScript Global Conferences 2022 Logo</h2>
+        <div class="section__subtitle">
+          The logo of JavaScript Global Conferences 2022 was decided through the logo
+          competition from 8. June to 7. July After online public voting and
+          Selection Committee's judging process, the logo from Naresh Agrawal
+          won the prize. After consultation with Mr. Agrawal we optimized the
+          prize-winning-logo for this year's summit as following
+        </div>
+        <div class="section__body">
+         <img class="section__logo" src="./assets/images/logo.png" alt="Logo">
         </div>
       </div>
     </section>
@@ -123,7 +140,7 @@
         </div>
       </div>
     </section>
-    <section class="section section--dark">
+    <section class="section section--dark mobile-only">
       <div class="container">
         <h2 class="section__title">Partners</h2>
         <div class="section__body">
@@ -156,14 +173,17 @@
       </div>
     </section>
     <footer class="footer">
-      Event by
-      <img
-        height="40"
-        width="40"
-        src="./assets/images/git-nation.svg"
-        alt="Git Nation"
-      />
-      <strong>GitNation</strong>
+      <div class="footer__logo">
+        Event by
+        <img
+          height="40"
+          width="40"
+          src="./assets/images/git-nation.svg"
+          alt="Git Nation"
+        />
+        <strong>GitNation</strong>
+      </div>
+      <p class="footer__rights">2022 JS Nation, Some rights are reserved.</p>
     </footer>
   </body>
 </html>
