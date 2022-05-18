@@ -3,13 +3,16 @@
   top: 0;
   left: 0;
   right: 0;
+
+  --navbar-height: 52px;
+}
+
+.navbar .navbar__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: var(--navbar-height);
   padding: 0 24px;
-
-  --navbar-height: 48px;
 }
 
 .navbar .navbar__logo-wrapper {
@@ -65,8 +68,10 @@
 
 @media screen and (min-width: 768px) {
   .navbar {
-    height: 72px;
     margin-top: var(--toolbar-height) !important;
+    background-color: var(--color-white);
+
+    --navbar-height: 72px;
   }
 
   .navbar .navbar__logo-wrapper {

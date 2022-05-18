@@ -25,8 +25,9 @@
 }
 
 .headline .headline__description {
+  max-width: 500px;
   line-height: 24px;
-  margin: 0 -4px;
+  margin: 20px auto;
   padding: 24px;
   border: 1px solid var(--color-gray);
   background-color: var(--color-white);
@@ -41,4 +42,10 @@
 .headline .headline__contact-link {
   font-weight: var(--font-thick);
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    min-height: 700px;
+  }
 }
