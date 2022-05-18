@@ -1,0 +1,61 @@
+.speaker {
+  position: relative;
+  display: flex;
+  padding-top: 18px;
+  text-align: left;
+  align-items: flex-start;
+  margin: 36px 0;
+}
+
+.speaker::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 80px;
+  width: 80px;
+  background: url(../../assets/images/chess.jpg);
+  background-size: cover;
+}
+
+.speaker .speaker__image {
+  width: 120px;
+  margin-right: 16px;
+  margin-left: 20px;
+}
+
+.speaker .speaker__name {
+  font-size: var(--text-md);
+  font-weight: var(--font-medium);
+}
+
+.speaker .speaker__occupation {
+  padding: 8px 0;
+  font-size: var(--text-xxs);
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+.speaker .speaker__occupation::after {
+  content: "";
+  display: block;
+  max-width: 20px;
+  margin-top: 12px;
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.speaker .speaker__about {
+  font-size: var(--text-xxs);
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .speaker {
+    margin: 16px 0;
+  }
+
+  .speaker::before {
+    opacity: 40%;
+  }
+}

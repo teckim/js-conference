@@ -1,0 +1,40 @@
+.event-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  width: 100%;
+  margin-bottom: 18px;
+  background-color: rgb(236 82 66 / 48%);
+  color: var(--color-white);
+}
+
+.event-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background: url(../../assets/images/headline-background.jpg);
+  background-size: cover;
+  background-position-x: left;
+}
+
+.event-card:first-child::before {
+  background-position-x: right;
+}
+
+.event-card .event-card__year {
+  font-size: var(--text-xxl);
+  font-weight: var(--font-bold);
+  margin-bottom: 16px;
+}
+
+.event-card .event-card__title {
+  font-size: var(--text-base);
+  font-weight: var(--font-regular);
+}

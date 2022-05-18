@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  color: var(--base-text-color);
+  background: var(--base-background-color);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  font-family: var(--base-font-family);
+  font-weight: var(--font-regular);
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  min-height: 1px;
+  height: auto;
+}
+
+:root {
+  /* colors */
+  --color-white: #fcfcfc;
+  --color-black: #575757;
+  --color-gray: #d3d3d3;
+  --color-primary: #ec5242;
+  --color-secondary: #272a31;
+
+  /* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-thick: 600;
+  --font-bold: 700;
+
+  /* font sizes */
+  --text-xxxs: 10px;
+  --text-xxs: 12px;
+  --text-xs: 14px;
+  --text-sm: 15px;
+  --text-base: 16px;
+  --text-md: 18px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+  --text-xxl: 32px;
+  --text-xxxl: 40px;
+
+  /* base styles */
+  --base-font-family: "Lato", "Helvetica Neue", helvetica, sans-serif;
+  --secondary-font-family: "COCOGOOSE", sans-serif;
+  --base-font-size: var(--text-base);
+  --base-text-color: var(--color-black);
+  --base-background-color: var(--color-white);
+
+  /* common vars */
+  --toolbar-height: 28px;
+}

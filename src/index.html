@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript Conference</title>
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Components -->
+    <link rel="stylesheet" href="./css/components/toolbar.css" />
+    <link rel="stylesheet" href="./css/components/navbar.css" />
+    <link rel="stylesheet" href="./css/components/event.css" />
+    <link rel="stylesheet" href="./css/components/program.css" />
+    <link rel="stylesheet" href="./css/components/speaker.css" />
+    <link rel="stylesheet" href="./css/components/partner.css" />
+    <!-- Utilities -->
+    <link rel="stylesheet" href="./css/utilities/layout.css" />
+    <!-- Pages -->
+    <link rel="stylesheet" href="./css/pages/home.css" />
+    <link rel="stylesheet" href="./css/pages/common.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="toolbar">
+        <ul class="toolbar__list container">
+          <li class="toolbar__list-item">
+            <a><img src="./assets/icons/facebook.svg" alt="Facebook Icon" /></a>
+          </li>
+          <li class="toolbar__list-item">
+            <a><img src="./assets/icons/twitter.svg" alt="Twitter Icon" /></a>
+          </li>
+          <li class="toolbar__list-item"><a>English</a></li>
+          <li class="toolbar__list-item"><a>My Page</a></li>
+          <li class="toolbar__list-item"><a>Logout</a></li>
+        </ul>
+      </div>
+      <div class="navbar">
+        <div class="navbar__container container">
+          <div class="navbar__logo-wrapper">
+            <a href="./index.html" class="navbar__logo">
+              <img src="./assets/images/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <nav>
+            <button class="navbar__menu-button" type="button">
+              <img src="./assets/icons/menu.svg" alt="Menu icon" />
+            </button>
+            <div class="navbar__links-list-container">
+              <button class="navbar__close-button" type="button">
+                <img src="./assets/icons/chevron-left.svg" alt="Close icon" />
+              </button>
+              <ul class="navbar__links-list">
+                <li class="navbar__links-list-item">
+                  <a href="./about.html">About</a>
+                </li>
+                <li class="navbar__links-list-item">
+                  <a href="./about.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <button class="navbar__cta-button" type="button">
+            Get Your Ticket
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="headline">
+      <div class="event">
+        <div class="container">
+          <div class="event__overtitle">"Hello! JavaScript Lovers"</div>
+          <h1 class="event__title">
+            Global JavaScript Conference <br />
+            2022
+          </h1>
+          <p class="event__description">
+            JavaScript is #1 on demand programming language. Meet the ones who
+            shape out the now and the future of the prospering nation.
+          </p>
+          <div class="event__date">JUNE, 16th ~ 20th</div>
+          <div class="event__location">
+            @ Gedempt Hamerkanaal 231 1021 KP Amsterdam
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="section__title">Main Program</h2>
+        <div class="program">
+          <div class="program__card">
+            <div class="program__card-icon">
+              <img src="./assets/icons/login.svg" alt="Login icon" />
+            </div>
+            <div class="program__card-title">Opening</div>
+            <div class="program__card-text">
+              A small opening ceremony, to welcome everybody, and give a briefe
+              introduction to the conference.
+            </div>
+          </div>
+          <div class="program__card">
+            <div class="program__card-icon">
+              <img src="./assets/icons/speaker.svg" alt="Speaker icon" />
+            </div>
+            <div class="program__card-title">Lecture</div>
+            <div class="program__card-text">
+              Listen to the speakers and inreach your knowledge.
+            </div>
+          </div>
+          <div class="program__card">
+            <div class="program__card-icon">
+              <img src="./assets/icons/info.svg" alt="Info icon" />
+            </div>
+            <div class="program__card-title">Q&A</div>
+            <div class="program__card-text">
+              If you have a question, you will have the opportunity to ask the
+              speaker.
+            </div>
+          </div>
+          <div class="program__card">
+            <div class="program__card-icon">
+              <img src="./assets/icons/logout.svg" alt="Info icon" />
+            </div>
+            <div class="program__card-title">Conclusion</div>
+            <div class="program__card-text">
+              We will conclude our conference here.
+            </div>
+          </div>
+        </div>
+        <a
+          class="section__link section__link--plain desktop-only"
+          href="/program"
+          >SEE THE WHOLE PROGRAM</a
+        >
+        <a class="section__link mobile-only" href="/program"
+          >Join JavaScript Conference</a
+        >
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Featured Speakers</h2>
+        <div id="speakers" class="section__body section__body--desktop-grid">
+          <div class="speaker">
+            <img
+              class="speaker__image"
+              src="./assets/images/speaker-1.jpg"
+              alt="Speaker 1"
+            />
+            <div class="speaker__body">
+              <div class="speaker__name">Yochai Benkler</div>
+              <p class="speaker__occupation">
+                Berkman Professor of Entrepreneurial Legal Studies at Harvard
+                Law School
+              </p>
+              <p class="speaker__about">
+                Benkler studies commons-based peer production, and published his
+                senminal book The Wealth of Networks in 2006
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="section__more-btn" type="button">
+          <span>More</span>
+          <img src="./assets/icons/chevron-down.svg" alt="Chevron down icon" />
+        </button>
+      </div>
+    </section>
+    <section class="section section--dark desktop-only">
+      <div class="container">
+        <h2 class="section__title">Partners</h2>
+        <div class="section__body">
+          <img
+            class="partner"
+            src="./assets/images/partner-1.png"
+            alt="Partner 1"
+          />
+          <img
+            class="partner"
+            src="./assets/images/partner-2.png"
+            alt="Partner 2"
+          />
+          <img
+            class="partner"
+            src="./assets/images/partner-3.png"
+            alt="Partner 3"
+          />
+          <img
+            class="partner"
+            src="./assets/images/partner-4.png"
+            alt="Partner 4"
+          />
+          <img
+            class="partner"
+            src="./assets/images/partner-5.png"
+            alt="Partner 5"
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer--light desktop-only">
+      <div class="footer__logo">
+        Event by
+        <img
+          height="40"
+          width="40"
+          src="./assets/images/git-nation.svg"
+          alt="Git Nation"
+        />
+        <strong>GitNation</strong>
+      </div>
+      <div>
+        <p class="footer__rights">2022 JS Nation, Some rights are reserved.</p>
+        <p class="desktop-only">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
+          suscipit veritatis! Id reiciendis praesentium pariatur veritatis
+          exercitationem? Voluptatum similique distinctio.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
